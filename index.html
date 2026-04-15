@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithun Raam - The Next Innings</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Intro Section -->
+    <section id="hero-intro" class="section hero-intro">
+        <div class="hero-background">
+            <div class="particles"></div>
+            <div class="light-flicker"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">HAPPY BIRTHDAY</h1>
+            <h2 class="hero-highlight">MITHUN RAAM</h2>
+            <p class="hero-subtitle">The CSK Warrior</p>
+            <p class="hero-tagline">Born to Rule the Pitch</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Friendship Message Section -->
+    <section id="friendship-message" class="section friendship-message">
+        <div class="container">
+            <div class="message-content">
+                <p class="message-line">I don't know everything about your past...</p>
+                <p class="message-line">But I know one thing for sure — your future is going to be powerful.</p>
+                <p class="message-line">Whatever happens… I'm always here da.</p>
+                <p class="message-line">You're not alone — we're all right beside you.</p>
+                <p class="message-line">Don't overthink, don't stop yourself… just be you.</p>
+                <p class="message-line">Be that same good-hearted, fun, caring guy everyone loves.</p>
+                <p class="message-line">And most importantly… stay happy always.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Highlights Section -->
+    <section id="character-highlights" class="section character-highlights">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="character-card">
+                    <div class="card-icon">🏏</div>
+                    <h3>Cricket Soul</h3>
+                    <p>Lives every match like a final</p>
+                </div>
+                <div class="character-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Mass Energy</h3>
+                    <p>Vijay-level swag and confidence</p>
+                </div>
+                <div class="character-card">
+                    <div class="card-icon">❤️</div>
+                    <h3>True Friend</h3>
+                    <p>Always caring, always real</p>
+                </div>
+                <div class="character-card">
+                    <div class="card-icon">🌿</div>
+                    <h3>Nature Love</h3>
+                    <p>Finds peace in simple moments</p>
+                </div>
+                <div class="character-card">
+                    <div class="card-icon">🏎️</div>
+                    <h3>Car Passion</h3>
+                    <p>Driven by speed and dreams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivational Quotes Section -->
+    <section id="motivational-quotes" class="section motivational-quotes">
+        <div class="container">
+            <div class="scoreboard">
+                <div class="quote-container">
+                    <p class="quote-text">Every tough phase is just a powerplay before your big innings.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">You're stronger than the silence you're going through.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">Even legends have bad days — but they never stop playing.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">Your comeback is going to be louder than your doubts.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">Stay in the game — your winning moment is loading.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">Life will bowl bouncers… just hook it with confidence.</p>
+                </div>
+                <div class="quote-container">
+                    <p class="quote-text">This is not your low point… this is your build-up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Memory Gallery</h2>
+                
+                <!-- Admin Controls -->
+                <div class="admin-controls" id="adminControls">
+                    <button class="admin-btn" id="adminToggle">🔐 Admin</button>
+                    <div class="admin-panel" id="adminPanel" style="display: none;">
+                        <div class="admin-form">
+                            <input type="password" id="adminPassword" placeholder="Admin Password" class="admin-input">
+                            <button class="admin-action-btn" id="lockGallery">🔒 Lock Gallery</button>
+                            <button class="admin-action-btn" id="unlockGallery">🔓 Unlock Gallery</button>
+                            <button class="admin-action-btn" id="exportGallery">📥 Export</button>
+                            <button class="admin-action-btn" id="importGallery">📤 Import</button>
+                            <input type="file" id="importFile" accept=".json" style="display: none;">
+                        </div>
+                        <div class="gallery-status" id="galleryStatus">
+                            <span class="status-indicator" id="statusIndicator">🟢</span>
+                            <span class="status-text" id="statusText">Gallery Unlocked</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📸</div>
+                        <p class="upload-text">Drag & Drop Photos Here</p>
+                        <p class="upload-subtext">or click to browse</p>
+                        <input type="file" id="photoInput" accept="image/*" multiple hidden>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="gallery-btn" id="carouselBtn">🎠 Carousel View</button>
+                <button class="gallery-btn" id="timelineBtn">📅 Timeline View</button>
+                <button class="gallery-btn" id="gridBtn">⚏ Grid View</button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically added here -->
+            </div>
+            
+            <!-- Photo Carousel -->
+            <div class="photo-carousel" id="photoCarousel" style="display: none;">
+                <div class="carousel-container">
+                    <button class="carousel-btn-prev" id="prevBtn">‹</button>
+                    <div class="carousel-slide">
+                        <img id="carouselImage" src="" alt="Memory">
+                        <div class="carousel-caption">
+                            <h3 id="carouselTitle">Memory Title</h3>
+                            <p id="carouselDate">Date</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn-next" id="nextBtn">›</button>
+                </div>
+            </div>
+            
+            <!-- Timeline View -->
+            <div class="memory-timeline" id="memoryTimeline" style="display: none;">
+                <div class="timeline-line"></div>
+                <div class="timeline-items" id="timelineItems">
+                    <!-- Timeline items will be dynamically added -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cricket Equipment Section -->
+    <section id="cricket-equipment" class="section cricket-equipment">
+        <div class="container">
+            <h2 class="equipment-title">Cricket Arsenal</h2>
+            <div class="equipment-showcase">
+                <div class="equipment-item">
+                    <div class="equipment-visual">
+                        <div class="bat-3d">
+                            <div class="bat-handle"></div>
+                            <div class="bat-blade"></div>
+                            <div class="bat-edge"></div>
+                        </div>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Professional Cricket Bat</h3>
+                        <p>English Willow - Perfect balance for powerful strokes</p>
+                        <div class="equipment-stats">
+                            <span class="stat">Power: 95%</span>
+                            <span class="stat">Balance: 90%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipment-item">
+                    <div class="equipment-visual">
+                        <div class="ball-3d">
+                            <div class="ball-core"></div>
+                            <div class="ball-seam"></div>
+                            <div class="ball-shine"></div>
+                        </div>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Leather Cricket Ball</h3>
+                        <p>Professional grade - Perfect swing and seam</p>
+                        <div class="equipment-stats">
+                            <span class="stat">Swing: 88%</span>
+                            <span class="stat">Durability: 95%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipment-item">
+                    <div class="equipment-visual">
+                        <div class="gloves-3d">
+                            <div class="glove-palm"></div>
+                            <div class="glove-fingers"></div>
+                            <div class="glove-webbing"></div>
+                        </div>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Wicket Keeping Gloves</h3>
+                        <p>Premium leather - Maximum protection and grip</p>
+                        <div class="equipment-stats">
+                            <span class="stat">Protection: 92%</span>
+                            <span class="stat">Flexibility: 88%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipment-item">
+                    <div class="equipment-visual">
+                        <div class="pads-3d">
+                            <div class="pad-outer"></div>
+                            <div class="pad-inner"></div>
+                            <div class="pad-straps"></div>
+                        </div>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Batting Pads</h3>
+                        <p>Lightweight design - Ultimate protection</p>
+                        <div class="equipment-stats">
+                            <span class="stat">Protection: 94%</span>
+                            <span class="stat">Comfort: 90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Mode Section -->
+    <section id="sports-mode" class="section sports-mode">
+        <div class="container">
+            <div class="stats-board">
+                <h2 class="stats-title">MITHUN RAAM STATS</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Runs</div>
+                        <div class="stat-value">Infinite</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Sixes</div>
+                        <div class="stat-value">Uncountable</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Energy</div>
+                        <div class="stat-value">100%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Attitude</div>
+                        <div class="stat-value">Mass</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Friendship</div>
+                        <div class="stat-value">Unbreakable</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cricket Mini-Game -->
+            <div class="cricket-game" id="cricketGame">
+                <div class="game-header">
+                    <h3 class="game-title">🏏 Birthday Cricket Challenge</h3>
+                    <div class="game-controls">
+                        <button class="game-btn" id="startGameBtn">Start Game</button>
+                        <button class="game-btn" id="resetGameBtn">Reset</button>
+                    </div>
+                </div>
+                
+                <div class="game-arena">
+                    <div class="stadium">
+                        <div class="crowd" id="crowd">
+                            <div class="crowd-section left"></div>
+                            <div class="crowd-section right"></div>
+                        </div>
+                        <div class="pitch">
+                            <div class="bowler" id="bowler">
+                                <div class="bowler-body"></div>
+                                <div class="bowler-arm" id="bowlerArm"></div>
+                            </div>
+                            <div class="wickets" id="wickets">
+                                <div class="stump"></div>
+                                <div class="stump"></div>
+                                <div class="stump"></div>
+                                <div class="bails" id="bails"></div>
+                            </div>
+                            <div class="batsman" id="batsman">
+                                <div class="player-body"></div>
+                                <div class="cricket-bat" id="gameBat"></div>
+                            </div>
+                            <div class="ball" id="ball">
+                                <div class="cricket-ball"></div>
+                                <div class="ball-trail" id="ballTrail"></div>
+                            </div>
+                            <div class="fielders">
+                                <div class="fielder fielder-1" id="fielder1"></div>
+                                <div class="fielder fielder-2" id="fielder2"></div>
+                                <div class="fielder fielder-3" id="fielder3"></div>
+                            </div>
+                            <div class="pitch-markings">
+                                <div class="crease-line"></div>
+                                <div class="popping-crease"></div>
+                                <div class="boundary" id="boundary"></div>
+                            </div>
+                        </div>
+                        <div class="scoreboard">
+                            <div class="digital-display">
+                                <div class="score-display">
+                                    <span class="score-label">SCORE</span>
+                                    <span class="score-value" id="gameScore">0</span>
+                                </div>
+                                <div class="overs-display">
+                                    <span class="overs-label">OVERS</span>
+                                    <span class="overs-value" id="gameOvers">0.0</span>
+                                </div>
+                                <div class="wickets-display">
+                                    <span class="wickets-label">WICKETS</span>
+                                    <span class="wickets-value" id="gameWickets">0</span>
+                                </div>
+                                <div class="run-rate">
+                                    <span class="run-rate-label">RUN RATE</span>
+                                    <span class="run-rate-value" id="runRate">0.0</span>
+                                </div>
+                            </div>
+                            <div class="shot-indicator" id="shotIndicator">
+                                <span id="shotResult">READY TO BAT</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-controls-panel">
+                        <div class="shot-buttons">
+                            <button class="shot-btn" data-shot="defensive">🛡️ Defensive</button>
+                            <button class="shot-btn" data-shot="straight">➡️ Straight Drive</button>
+                            <button class="shot-btn" data-shot="cover">🔄 Cover Drive</button>
+                            <button class="shot-btn" data-shot="pull">⬅️ Pull Shot</button>
+                            <button class="shot-btn" data-shot="six">🚀 Six Shot</button>
+                        </div>
+                        
+                        <div class="power-ups">
+                            <div class="power-up" id="cskPower">
+                                <span class="power-icon">💛</span>
+                                <span class="power-name">CSK Power</span>
+                                <span class="power-count" id="cskCount">3</span>
+                            </div>
+                            <div class="power-up" id="vijayPower">
+                                <span class="power-icon">⚡</span>
+                                <span class="power-name">Vijay Swag</span>
+                                <span class="power-count" id="vijayCount">2</span>
+                            </div>
+                            <div class="power-up" id="naturePower">
+                                <span class="power-icon">🌿</span>
+                                <span class="power-name">Nature Calm</span>
+                                <span class="power-count" id="natureCount">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-message" id="gameMessage">
+                    Press "Start Game" to begin your birthday cricket challenge!
+                </div>
+                
+                <div class="leaderboard">
+                    <h4>🏆 Birthday Leaderboard</h4>
+                    <div class="leaderboard-list" id="leaderboardList">
+                        <div class="leaderboard-item">
+                            <span class="rank">1</span>
+                            <span class="player-name">Mithun Raam</span>
+                            <span class="player-score">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Card Generator Section -->
+    <section id="card-generator" class="section card-generator">
+        <div class="container">
+            <h2 class="card-title">🎂 Birthday Card Generator</h2>
+            
+            <div class="card-controls">
+                <div class="card-templates">
+                    <h3>Choose Template</h3>
+                    <div class="template-grid">
+                        <button class="template-btn active" data-template="cricket">🏏 Cricket Champion</button>
+                        <button class="template-btn" data-template="csk">💛 CSK Special</button>
+                        <button class="template-btn" data-template="nature">🌿 Nature Love</button>
+                        <button class="template-btn" data-template="vijay">⚡ Vijay Swag</button>
+                        <button class="template-btn" data-template="car">🏎️ Car Passion</button>
+                        <button class="template-btn" data-template="classic">🎉 Classic Birthday</button>
+                    </div>
+                </div>
+                
+                <div class="card-customization">
+                    <h3>Personalize Your Card</h3>
+                    <div class="customization-grid">
+                        <div class="input-group">
+                            <label for="recipientName">Recipient Name</label>
+                            <input type="text" id="recipientName" placeholder="Mithun Raam" value="Mithun Raam">
+                        </div>
+                        <div class="input-group">
+                            <label for="cardMessage">Personal Message</label>
+                            <textarea id="cardMessage" placeholder="Write your birthday message here...">Happy 18th Birthday! May all your dreams come true!</textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="cardColor">Theme Color</label>
+                            <div class="color-picker">
+                                <input type="color" id="cardColor" value="#F9CD05">
+                                <div class="color-presets">
+                                    <div class="color-preset" style="background: #F9CD05" data-color="#F9CD05"></div>
+                                    <div class="color-preset" style="background: #FFD700" data-color="#FFD700"></div>
+                                    <div class="color-preset" style="background: #4CAF50" data-color="#4CAF50"></div>
+                                    <div class="color-preset" style="background: #1E3A5F" data-color="#1E3A5F"></div>
+                                    <div class="color-preset" style="background: #FF6B6B" data-color="#FF6B6B"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="cardFont">Font Style</label>
+                            <select id="cardFont">
+                                <option value="bebas">Bebas Neue (Bold)</option>
+                                <option value="playfair">Playfair Display (Elegant)</option>
+                                <option value="inter">Inter (Modern)</option>
+                                <option value="dancing">Dancing Script (Fun)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-preview-section">
+                    <h3>Preview</h3>
+                    <div class="card-preview-container">
+                        <div class="card-preview" id="cardPreview">
+                            <div class="card-content">
+                                <div class="card-background">
+                                    <div class="card-pattern"></div>
+                                    <div class="card-glow"></div>
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="card-title" id="previewTitle">Happy Birthday</h2>
+                                    <h3 class="card-name" id="previewName">Mithun Raam</h3>
+                                    <p class="card-message" id="previewMessage">Happy 18th Birthday! May all your dreams come true!</p>
+                                    <div class="card-age">
+                                        <span class="age-number">18</span>
+                                        <span class="age-text">Years Young</span>
+                                    </div>
+                                </div>
+                                <div class="card-decorations">
+                                    <div class="decoration cricket-bat">🏏</div>
+                                    <div class="decoration cricket-ball">⚪</div>
+                                    <div class="decoration stars">✨</div>
+                                    <div class="decoration confetti">🎊</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-actions">
+                    <button class="card-btn primary" id="generateCard">🎨 Generate Card</button>
+                    <button class="card-btn secondary" id="downloadCard">📥 Download</button>
+                    <button class="card-btn secondary" id="shareCard">📤 Share</button>
+                    <button class="card-btn secondary" id="resetCard">🔄 Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section id="final-message" class="section final-message">
+        <div class="container">
+            <div class="final-content">
+                <p class="final-line">This is your new innings.</p>
+                <p class="final-line">Play it your way.</p>
+                <p class="final-line">We're always with you.</p>
+                <h2 class="final-birthday">Happy 18, Mithun Raam.</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="backend.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
