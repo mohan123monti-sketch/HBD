@@ -40,8 +40,8 @@ body {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(249, 205, 5, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(249, 205, 5, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 20% 50%, rgba(0, 75, 160, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(0, 75, 160, 0.1) 0%, transparent 50%),
         linear-gradient(180deg, #000 0%, #0a0a0a 100%);
 }
 
@@ -100,8 +100,8 @@ body {
 .hero-title {
     font-family: 'Bebas Neue', cursive;
     font-size: clamp(3rem, 8vw, 6rem);
-    color: #F9CD05;
-    text-shadow: 0 0 20px rgba(249, 205, 5, 0.5);
+    color: #004BA0;
+    text-shadow: 0 0 20px rgba(0, 75, 160, 0.5);
     margin-bottom: 10px;
     animation: titleGlow 2s ease-in-out infinite alternate;
 }
@@ -128,7 +128,7 @@ body {
 .hero-subtitle {
     font-family: 'Inter', sans-serif;
     font-size: clamp(1.2rem, 3vw, 1.8rem);
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -264,7 +264,7 @@ body {
 .character-card h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 15px;
 }
 
@@ -282,7 +282,7 @@ body {
 
 .scoreboard {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 10px;
     padding: 40px;
     position: relative;
@@ -295,7 +295,7 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #F9CD05, #FFD700, #F9CD05);
+    background: linear-gradient(45deg, #004BA0, #D4AF37, #004BA0);
     border-radius: 10px;
     z-index: -1;
     animation: borderGlow 3s linear infinite;
@@ -332,7 +332,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.2rem, 3vw, 1.6rem);
     line-height: 1.6;
-    color: #F9CD05;
+    color: #004BA0;
     text-shadow: 0 0 10px rgba(249, 205, 5, 0.3);
     position: relative;
     padding-left: 30px;
@@ -365,9 +365,9 @@ body {
 .gallery-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 30px;
-    text-shadow: 0 0 20px rgba(249, 205, 5, 0.5);
+    text-shadow: 0 0 20px rgba(0, 75, 160, 0.5);
 }
 
 /* Admin Controls */
@@ -494,7 +494,7 @@ body {
 
 .upload-area:hover {
     border-color: #FFD700;
-    background: rgba(249, 205, 5, 0.1);
+    background: rgba(0, 75, 160, 0.1);
     transform: translateY(-2px);
 }
 
@@ -516,7 +516,7 @@ body {
 .upload-text {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 10px;
 }
 
@@ -534,9 +534,9 @@ body {
 }
 
 .gallery-btn {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
-    color: #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
+    color: #004BA0;
     padding: 12px 24px;
     border-radius: 25px;
     font-family: 'Bebas Neue', cursive;
@@ -546,13 +546,13 @@ body {
 }
 
 .gallery-btn:hover {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
     transform: translateY(-2px);
 }
 
 .gallery-btn.active {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
 }
 
@@ -598,7 +598,7 @@ body {
 .gallery-image-placeholder span {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -626,8 +626,19 @@ body {
 }
 
 .carousel-btn-prev,
+.carousel-btn-next:root {
+    --mi-blue: #004BA0;
+    --mi-gold: #D4AF37;
+    --mi-dark-blue: #003366;
+    --mi-light-blue: #0066CC;
+    --white: #ffffff;
+    --text-light: #cccccc;
+    --text-dark: #333333;
+}
+
+.carousel-btn-prev,
 .carousel-btn-next {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
     border: none;
     width: 50px;
@@ -662,7 +673,7 @@ body {
 .carousel-caption h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 10px;
 }
 
@@ -705,8 +716,8 @@ body {
 }
 
 .timeline-content {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
     border-radius: 15px;
     padding: 20px;
     width: 45%;
@@ -723,7 +734,7 @@ body {
 
 .timeline-date {
     font-family: 'Bebas Neue', cursive;
-    color: #F9CD05;
+    color: #004BA0;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -750,7 +761,7 @@ body {
     top: 50%;
     width: 20px;
     height: 20px;
-    background: #F9CD05;
+    background: #004BA0;
     border: 4px solid #000;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -766,10 +777,10 @@ body {
 .equipment-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-align: center;
     margin-bottom: 50px;
-    text-shadow: 0 0 20px rgba(249, 205, 5, 0.5);
+    text-shadow: 0 0 20px rgba(0, 75, 160, 0.5);
 }
 
 .equipment-showcase {
@@ -780,7 +791,7 @@ body {
 
 .equipment-item {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 20px;
     padding: 30px;
     text-align: center;
@@ -998,7 +1009,7 @@ body {
 .equipment-info h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 10px;
 }
 
@@ -1297,8 +1308,8 @@ body {
 
 @keyframes boundaryGlow {
     0%, 100% { 
-        border-color: #F9CD05;
-        box-shadow: 0 0 0 rgba(249, 205, 5, 0);
+        border-color: #004BA0;
+        box-shadow: 0 0 0 rgba(0, 75, 160, 0);
     }
     50% { 
         border-color: #FFD700;
@@ -1339,7 +1350,7 @@ body {
 /* Enhanced Scoreboard */
 .digital-display {
     background: linear-gradient(135deg, #000, #1a1a1a);
-    border: 3px solid #F9CD05;
+    border: 3px solid #004BA0;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 0 30px rgba(249, 205, 5, 0.3);
@@ -1371,7 +1382,7 @@ body {
 .run-rate-value {
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-shadow: 0 0 15px rgba(249, 205, 5, 0.6);
     display: block;
     font-weight: bold;
@@ -1380,7 +1391,7 @@ body {
 /* Shot Indicator */
 .shot-indicator {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -1390,7 +1401,7 @@ body {
 #shotResult {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-shadow: 0 0 10px rgba(249, 205, 5, 0.5);
     animation: pulse 2s ease-in-out infinite;
 }
@@ -1465,7 +1476,7 @@ body {
 /* Cricket Game */
 .cricket-game {
     background: rgba(0, 0, 0, 0.9);
-    border: 3px solid #F9CD05;
+    border: 3px solid #004BA0;
     border-radius: 20px;
     padding: 40px;
     margin-top: 40px;
@@ -1479,7 +1490,7 @@ body {
 .game-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 20px;
     text-shadow: 0 0 15px rgba(249, 205, 5, 0.5);
 }
@@ -1491,7 +1502,7 @@ body {
 }
 
 .game-btn {
-    background: linear-gradient(135deg, #F9CD05, #FFD700);
+    background: linear-gradient(135deg, #004BA0, #D4AF37);
     border: none;
     color: #000;
     padding: 15px 30px;
@@ -1601,7 +1612,7 @@ body {
 
 .scoreboard {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 10px;
     padding: 15px;
     display: grid;
@@ -1630,13 +1641,13 @@ body {
 .wickets-value {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-shadow: 0 0 10px rgba(249, 205, 5, 0.5);
 }
 
 .game-controls-panel {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 15px;
     padding: 20px;
 }
@@ -1649,9 +1660,9 @@ body {
 }
 
 .shot-btn {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
-    color: #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
+    color: #004BA0;
     padding: 15px;
     border-radius: 10px;
     font-family: 'Bebas Neue', cursive;
@@ -1661,7 +1672,7 @@ body {
 }
 
 .shot-btn:hover {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
     transform: translateY(-2px);
 }
@@ -1678,8 +1689,8 @@ body {
 }
 
 .power-up {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -1694,7 +1705,7 @@ body {
 }
 
 .power-up.active {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
 }
 
@@ -1721,15 +1732,15 @@ body {
 }
 
 .game-message {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     margin-bottom: 30px;
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
-    color: #F9CD05;
+    color: #004BA0;
     min-height: 60px;
     display: flex;
     align-items: center;
@@ -1783,7 +1794,7 @@ body {
 .player-score {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2rem;
-    color: #F9CD05;
+    color: #004BA0;
 }
 
 /* Responsive Design for Game */
@@ -1820,10 +1831,10 @@ body {
 .card-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
-    color: #F9CD05;
+    color: #004BA0;
     text-align: center;
     margin-bottom: 50px;
-    text-shadow: 0 0 20px rgba(249, 205, 5, 0.5);
+    text-shadow: 0 0 20px rgba(0, 75, 160, 0.5);
 }
 
 .card-controls {
@@ -1836,7 +1847,7 @@ body {
 .card-templates,
 .card-customization {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 15px;
     padding: 30px;
 }
@@ -1845,7 +1856,7 @@ body {
 .card-customization h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1857,9 +1868,9 @@ body {
 }
 
 .template-btn {
-    background: rgba(249, 205, 5, 0.1);
-    border: 2px solid #F9CD05;
-    color: #F9CD05;
+    background: rgba(0, 75, 160, 0.1);
+    border: 2px solid #004BA0;
+    color: #004BA0;
     padding: 15px;
     border-radius: 10px;
     font-family: 'Bebas Neue', cursive;
@@ -1870,13 +1881,13 @@ body {
 }
 
 .template-btn:hover {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
     transform: translateY(-2px);
 }
 
 .template-btn.active {
-    background: #F9CD05;
+    background: #004BA0;
     color: #000;
 }
 
@@ -1934,7 +1945,7 @@ body {
 .color-picker input[type="color"] {
     width: 60px;
     height: 40px;
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -1960,7 +1971,7 @@ body {
 
 .card-preview-section {
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #F9CD05;
+    border: 2px solid #004BA0;
     border-radius: 15px;
     padding: 30px;
 }
@@ -1968,7 +1979,7 @@ body {
 .card-preview-section h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    color: #F9CD05;
+    color: #004BA0;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1982,7 +1993,7 @@ body {
 .card-preview {
     width: 400px;
     height: 250px;
-    background: linear-gradient(135deg, #F9CD05, #FFD700);
+    background: linear-gradient(135deg, #004BA0, #D4AF37);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(249, 205, 5, 0.4);
     position: relative;
@@ -2161,7 +2172,7 @@ body {
 }
 
 .card-btn {
-    background: linear-gradient(135deg, #F9CD05, #FFD700);
+    background: linear-gradient(135deg, #004BA0, #D4AF37);
     border: none;
     color: #000;
     padding: 15px 30px;
@@ -2186,8 +2197,8 @@ body {
 
 .card-btn.secondary {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #F9CD05;
-    color: #F9CD05;
+    border: 2px solid #004BA0;
+    color: #004BA0;
 }
 
 /* Final Message Section */

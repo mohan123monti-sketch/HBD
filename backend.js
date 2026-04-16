@@ -12,7 +12,7 @@ class ImageGalleryBackend {
             const initialData = {
                 images: [],
                 locked: false,
-                adminPassword: 'csk2024',
+                adminPassword: 'mi2024',
                 lastUpdated: null
             };
             localStorage.setItem(this.storageKey, JSON.stringify(initialData));
@@ -24,7 +24,7 @@ class ImageGalleryBackend {
         this.galleryData = data ? JSON.parse(data) : {
             images: [],
             locked: false,
-            adminPassword: 'csk2024',
+            adminPassword: 'mi2024',
             lastUpdated: null
         };
         return this.galleryData;

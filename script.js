@@ -818,7 +818,7 @@ function initCricketGame() {
             "🎉 Happy Birthday Mithun! You're a cricket champion! 🏏",
             "🌟 Amazing game! Your birthday is as special as your cricket skills! ⭐",
             "🎂 Birthday six! You hit it out of the park! 🚀",
-            "💛 CSK wishes you a very happy birthday! Yellow army forever! 💛"
+            "� MI wishes you a very happy birthday! Paltan forever! �"
         ];
         
         const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
@@ -899,10 +899,10 @@ function initBirthdayCardGenerator() {
                 color: '#F9CD05',
                 decorations: ['cricket-bat', 'cricket-ball']
             },
-            csk: {
-                title: 'CSK Birthday',
-                message: 'Yellow Army wishes you a very happy birthday!',
-                color: '#F9CD05',
+            mi: {
+                title: 'MI Birthday',
+                message: 'MI Paltan wishes you a very happy birthday!',
+                color: '#004BA0',
                 decorations: ['cricket-bat', 'cricket-ball']
             },
             nature: {
